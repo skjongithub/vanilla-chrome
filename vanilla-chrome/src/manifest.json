@@ -1,0 +1,29 @@
+{
+  "name": "Vanilla Cookie Manager",
+  "short_name": "Vanilla",
+  "version": "1.4.0",
+  "manifest_version": 3,
+  "description": "__MSG_extDescription__",
+  "icons":
+   {
+    "128": "img/icon128.png",
+    "48": "img/icon48.png",
+    "32": "img/icon32.png",
+    "16": "img/icon16.png"
+  },
+  "default_locale": "en",
+  "action":
+  {
+    "default_icon": "img/icon32.png",
+    "default_title": "Vanilla",
+    "default_popup": "popup.html"
+  },
+  "background":
+  {
+    "service_worker": "js/background.js"
+  },
+  "minimum_chrome_version": "116",
+  "options_page": "options.html",
+  "permissions": [ "tabs", "cookies", "alarms", "storage" ],
+  "host_permissions": [ "http://*/*", "https://*/*" ]
+}
